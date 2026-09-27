@@ -33,7 +33,6 @@ public class ServicioEstudiantes {
     public void actualizar(String cedula, Estudiante nuevo) {
         Estudiante e = buscarPorCedula(cedula);
         if (e != null) {
-            e.setCedula(nuevo.getCedula());
             e.setNombre(nuevo.getNombre());
             e.setApellido(nuevo.getApellido());
         }

@@ -9,7 +9,6 @@ import com.krakedev.asistencias.entidades.Estudiante;
 @Service
 public class ServicioEstudiantes {
     private ArrayList<Estudiante> estudiantes = new ArrayList<>();
-    
     public void agregar(Estudiante estudiante) {
         if (buscarPorCedula(estudiante.getCedula()) == null) {
             estudiantes.add(estudiante);
